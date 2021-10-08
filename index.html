@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- JS -->
+    <script defer src="./main.js"></script>
+    <!-- FONT -->
+    <script defer src="./font.js"></script>
+    <title>yourwish</title>
+  </head>
+  <body>
+    <div class="all-container">
+      <div class="menu-modal">
+        <div class="menu-modal-body">
+          <section class="menu-modal-exit">
+            <button class="material-icons-round" onclick="onExitMenu()">
+              close
+            </button>
+          </section>
+          <section class="menu-modal-greeting">OOO님 안녕하세요!</section>
+          <section class="menu-modal-menu">
+            <button class="menu-modal-menu-button btn">보낸 선물 목록</button>
+            <button class="menu-modal-menu-button btn">홈페이지 이동</button>
+            <button class="menu-modal-menu-button btn">이용약관</button>
+            <button class="menu-modal-menu-button btn">정보보호약관</button>
+          </section>
+          <section class="menu-modal-footer">
+            <button class="menu-modal-menu-button btn">로그아웃</button>
+          </section>
+        </div>
+      </div>
+      <header>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="yourwish" />
+        </div>
+        <button class="material-icons-round" onclick="onClickMenu()">
+          menu
+        </button>
+      </header>
+      <section class="body-container bg-present">
+        <div class="main-text-area">
+          <span class="text-1">유어위시의</span>
+          <span class="text-2">선물 서비스</span>
+        </div>
+        <div class="menu-container login-menu">
+          <div class="btn-box">
+            <a href="./main.html">
+              <button
+                class="btn btn-login btn-login-naver border-btn first-item"
+              >
+                <img
+                  src="./images/naver_login_text.svg"
+                  alt="네이버로 로그인"
+                />
+              </button>
+            </a>
+            <a href="./main.html">
+              <button class="btn btn-login btn-login-kakao border-btn">
+                <img
+                  src="./images/kakao_login_text.svg"
+                  alt="카카오톡 로그인"
+                />
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

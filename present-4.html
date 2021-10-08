@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- JS -->
+    <script defer src="./main.js"></script>
+    <!-- FONT -->
+    <script defer src="./font.js"></script>
+    <title>yourwish</title>
+  </head>
+  <body>
+    <div class="all-container">
+      <div class="menu-modal">
+        <div class="menu-modal-body">
+          <section class="menu-modal-exit">
+            <button class="material-icons-round" onclick="onExitMenu()">
+              close
+            </button>
+          </section>
+          <section class="menu-modal-greeting">OOO님 안녕하세요!</section>
+          <section class="menu-modal-menu">
+            <button class="menu-modal-menu-button btn">보낸 선물 목록</button>
+            <button class="menu-modal-menu-button btn">홈페이지 이동</button>
+            <button class="menu-modal-menu-button btn">이용약관</button>
+            <button class="menu-modal-menu-button btn">정보보호약관</button>
+          </section>
+          <section class="menu-modal-footer">
+            <button class="menu-modal-menu-button btn">로그아웃</button>
+          </section>
+        </div>
+      </div>
+
+      <header>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="yourwish" />
+        </div>
+        <button class="material-icons-round" onclick="onClickMenu()">
+          menu
+        </button>
+      </header>
+      <section class="body-container">
+        <div class="main-text-area present-text-area">
+          <div class="title-1">
+            <span class="text-style-1">받으시는 분</span>
+            <span class="text-style-2">의</span>
+          </div>
+          <div class="title-2">
+            <span class="text-style-2">정보를 알려주세요!</span>
+          </div>
+          <div class="content">
+            <span class="text-style-3">간편한 클릭으로 선물 정보 입력 끝!</span>
+          </div>
+        </div>
+        <div class="menu-container present-page-1">
+          <div class="menu-container__content">
+            <div class="half-input-box">
+              <!-- <label for="sex-man" class="half-menu-item first-item"
+                ><input
+                  type="radio"
+                  id="sex-man"
+                  name="sex"
+                  value="man"
+                  checked
+                />남성</label
+              >
+
+              <label for="woman" class="half-menu-item"
+                ><input
+                  type="radio"
+                  id="sex-woman"
+                  name="sex"
+                  value="woman"
+                />여성</label
+              > -->
+              <div class="radio-toolbar">
+                <div class="radio-box">
+                  <input type="radio" id="man" name="sex" value="man" />
+                  <label for="man" class="first-item half-menu-item"
+                    >남자</label
+                  >
+                </div>
+                <div class="radio-box">
+                  <input type="radio" id="woman" name="sex" value="woman" />
+                  <label for="woman" class="half-menu-item">여자</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-box menu-item">
+              <button class="menu-item__btn btn">
+                <span class="input-title">나이</span>
+              </button>
+              <!-- <input type="text" class="present-input" /> -->
+            </div>
+            <div class="input-box menu-item">
+              <button class="menu-item__btn btn">
+                <span class="input-title">금액대</span>
+              </button>
+
+              <!-- <input type="text" class="present-input" /> -->
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn prev">
+              <img src="./images/prev.svg" alt="돌아가기" />
+            </button>
+            <button class="btn next">
+              <img src="./images/next.svg" alt="다음단계" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
