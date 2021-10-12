@@ -1,3 +1,35 @@
+// 링크
+const goIndex = () => {
+  window.location.href = "/index.html";
+};
+const goMain = () => {
+  window.location.href = "/main.html";
+};
+const goPresent1 = () => {
+  window.location.href = "/present-1.html";
+};
+const goPresent2 = () => {
+  window.location.href = "/present-2.html";
+};
+const goPresent3 = () => {
+  window.location.href = "/present-3.html";
+};
+const goPresent4 = () => {
+  window.location.href = "/present-4.html";
+};
+const goPresent4_1 = () => {
+  window.location.href = "/present-4-1.html";
+};
+const goPresent4_2 = () => {
+  window.location.href = "/present-4-2.html";
+};
+const goPresent5 = () => {
+  window.location.href = "/present-5.html";
+};
+const goPresent5_1 = () => {
+  window.location.href = "/present-5-1.html";
+};
+
 // 메뉴 모달창 예시
 const modal = document.querySelector(".menu-modal");
 const modalBody = document.querySelector(".menu-modal-body");
