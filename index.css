@@ -575,7 +575,7 @@ header .material-icons-round {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  padding: 10px;
+  padding: 0 20px;
 }
 
 .present-lists__item {
