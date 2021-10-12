@@ -285,6 +285,11 @@ header .material-icons-round {
   color: #838383;
   line-height: 3rem;
 }
+.text-style-4 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #b22222;
+}
 
 /* wrongnum modal */
 
@@ -404,20 +409,29 @@ header .material-icons-round {
   line-height: 3.2rem;
 }
 
-.present-page-1 .menu-item:first-child {
+.present-page-1 .menu-item:first-child,
+.present-page-5 .menu-item:first-child {
   top: 5rem;
 }
-.present-page-1 .menu-item:nth-child(2) {
+.present-page-1 .menu-item:nth-child(2),
+.present-page-5 .menu-item:nth-child(2) {
   top: calc(5rem + 3rem + 0.8rem);
 }
-.present-page-1 .menu-item:nth-child(3) {
+.present-page-1 .menu-item:nth-child(3),
+.present-page-5 .menu-item:nth-child(3) {
   top: calc(5rem + 6rem + 1.6rem);
+}
+.present-page-5 .menu-item:nth-child(4) {
+  top: calc(5rem + 9rem + 2.4rem);
+}
+.present-page-5 .menu-item:nth-child(5) {
+  top: calc(5rem + 12rem + 4rem);
 }
 
 .input-box .input-title {
   display: block;
   width: 3.3rem;
-  margin-left: 1.8rem;
+  margin-left: 1.2rem;
   font-size: 1.1rem;
   color: #585858;
   align-items: center;
@@ -523,4 +537,26 @@ header .material-icons-round {
 .radio-toolbar input[type="radio"]:checked + label {
   background-color: #fffbf7;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* present page 5 */
+
+.present-page-5 {
+  height: 487px;
+}
+
+.present-page-5 .menu-item__content {
+  font-size: 1rem;
+  text-align: right;
+  margin-right: 1rem;
+  color: #585858;
+}
+
+.present-page-5 .half-menu-item {
+  width: 40%;
+}
+
+.present-page-5 .menu-item:nth-child(5) {
+  background-color: #ebe8d6;
+  border: none;
 }
