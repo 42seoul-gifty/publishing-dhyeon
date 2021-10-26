@@ -14,12 +14,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
     <!-- JS -->
     <script defer src="./main.js"></script>
     <!-- FONT -->
-    <script defer src="./font.js"></script>
+    <script defer src="./fonts/font.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
     <title>yourwish</title>
   </head>
   <body>
@@ -44,7 +44,7 @@
         </div>
       </div>
       <header>
-        <div class="logo">
+        <div class="logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
         </div>
         <button class="material-icons-round" onclick="onClickMenu()">

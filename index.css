@@ -1,11 +1,36 @@
 *,
 body {
   box-sizing: border-box;
-  font-family: "rixrak-sans-pro", sans-serif;
+  font-family: "notosans-regular", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   color: #3e3e3e;
+}
+/* 
+@font-face {
+  font-family: "rixrak-sans";
+  src: url("./fonts/font.js") format("embedded");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "notosans-regular";
+  src: url("./fonts/NotoSansKR-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notosans-thin";
+  src: url("./fonts/NotoSansKR-Thin.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "notosans-bold";
+  src: url("./fonts/NotoSansKR-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
@@ -575,7 +600,7 @@ header .material-icons-round {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  padding: 10px;
+  padding: 0 20px;
 }
 
 .present-lists__item {
