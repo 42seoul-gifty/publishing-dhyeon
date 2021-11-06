@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- JS -->
     <script defer src="./main.js"></script>
     <!-- FONT -->
@@ -25,71 +26,119 @@
   <body>
     <div class="all-container">
       <header>
-        <div class="logo" onclick="goIndex()">
+        <div class="header__logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
         </div>
       </header>
       <section class="body-container">
-        <div class="main-text-area present-text-area">
-          <div class="title-1">
-            <span class="text-style-1">받으시는 분</span>
-            <span class="text-style-2">의</span>
+        <div class="body-container__text body-container__text--top77">
+          <div class="text__first text--l22">
+            <span class="text--bold text--s20 text--color-817C5C"
+              >받으시는 분</span
+            >
+            <span class="text--s15 text--color-838383">의</span>
           </div>
-          <div class="title-2">
-            <span class="text-style-2">정보를 알려주세요!</span>
+          <div class="text__second text--l22">
+            <span class="text--s15 text--color-838383">정보를 알려주세요!</span>
           </div>
-          <div class="content">
-            <span class="text-style-3">간편한 클릭으로 선물 정보 입력 끝!</span>
+          <div class="text__third text--l22">
+            <span class="text--color-585858 text--s11"
+              >간편한 클릭으로 선물 정보 입력 끝!</span
+            >
           </div>
         </div>
-        <div class="menu-container present-page-1">
-          <div class="menu-container__content">
-            <div class="half-input-box">
-              <div class="radio-toolbar">
-                <div class="radio-box">
+        <div class="body-container__menu menu--h436">
+          <div class="menu-container menu-container--l57">
+            <div class="menu-container__items">
+              <div class="menu-container__checkbox-wrap">
+                <div class="check-box">
                   <input type="radio" id="price-1" name="price" value="1" />
-                  <label for="price-1" class="first-item half-menu-item"
+                  <label
+                    for="price-1"
+                    class="
+                      check-box__label
+                      round-item round-item--border
+                      first-item
+                    "
                     >15,000</label
                   >
                 </div>
-                <div class="radio-box">
+                <div class="check-box">
                   <input type="radio" id="price-2" name="price" value="2" />
-                  <label for="price-2" class="half-menu-item">20,000</label>
+                  <label
+                    for="price-2"
+                    class="check-box__label round-item round-item--border"
+                    >20,000</label
+                  >
                 </div>
-                <div class="radio-box">
+                <div class="check-box">
                   <input type="radio" id="price-3" name="price" value="3" />
-                  <label for="price-3" class="half-menu-item">25,000</label>
+                  <label
+                    for="price-3"
+                    class="check-box__label round-item round-item--border"
+                    >25,000</label
+                  >
                 </div>
-                <div class="radio-box">
+                <div class="check-box">
                   <input type="radio" id="price-4" name="price" value="4" />
-                  <label for="price-4" class="half-menu-item">30,000</label>
+                  <label
+                    for="price-4"
+                    class="check-box__label round-item round-item--border"
+                    >30,000</label
+                  >
                 </div>
-                <div class="radio-box">
+                <div class="check-box">
                   <input type="radio" id="price-5" name="price" value="5" />
-                  <label for="price-5" class="half-menu-item">35,000</label>
+                  <label
+                    for="price-5"
+                    class="check-box__label round-item round-item--border"
+                    >35,000</label
+                  >
                 </div>
-                <div class="radio-box">
+                <div class="check-box">
                   <input type="radio" id="price-6" name="price" value="6" />
-                  <label for="price-6" class="half-menu-item">40,000</label>
+                  <label
+                    for="price-6"
+                    class="check-box__label round-item round-item--border"
+                    >40,000</label
+                  >
                 </div>
-                <div class="radio-box">
+                <div class="check-box">
                   <input type="radio" id="price-7" name="price" value="7" />
-                  <label for="price-7" class="half-menu-item">45,000</label>
+                  <label
+                    for="price-7"
+                    class="check-box__label round-item round-item--border"
+                    >45,000</label
+                  >
                 </div>
-                <div class="radio-box">
+                <div class="check-box">
                   <input type="radio" id="price-8" name="price" value="8" />
-                  <label for="price-8" class="half-menu-item">50,000</label>
+                  <label
+                    for="price-8"
+                    class="check-box__label round-item round-item--border"
+                    >50,000</label
+                  >
+                </div>
+              </div>
+              <div class="menu-container__nav-btn">
+                <div class="nav-btn--type2">
+                  <button
+                    class="nav-btn__prev btn round-item"
+                    onclick="goPresent4()"
+                  >
+                    <img src="./images/prev_arrow.svg" alt="돌아가기" />
+                    돌아가기
+                  </button>
+                  <button
+                    class="nav-btn__next btn round-item"
+                    onclick="goPresent4()"
+                  >
+                    다음단계
+                    <img src="./images/next_arrow.svg" alt="다음단계" />
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="button-container">
-            <button class="btn prev" onclick="goPresent4_1()">
-              <img src="./images/prev.svg" alt="돌아가기" />
-            </button>
-            <button class="btn next" onclick="goPresent4()">
-              <img src="./images/next.svg" alt="다음단계" />
-            </button>
           </div>
         </div>
       </section>

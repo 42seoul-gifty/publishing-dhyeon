@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- JS -->
     <script defer src="./main.js"></script>
     <!-- FONT -->
@@ -25,47 +26,63 @@
   <body>
     <div class="all-container">
       <div class="menu-modal">
-        <div class="menu-modal-body">
-          <section class="menu-modal-exit">
-            <button class="material-icons-round" onclick="onExitMenu()">
-              close
-            </button>
+        <div class="menu-modal__body">
+          <section class="menu-modal__exit-btn">
+            <img
+              src="./images/close.svg"
+              alt="close button"
+              onclick="onExitMenu()"
+            />
           </section>
-          <section class="menu-modal-greeting">OOO님 안녕하세요!</section>
-          <section class="menu-modal-menu">
-            <button class="menu-modal-menu-button btn">보낸 선물 목록</button>
-            <button class="menu-modal-menu-button btn">홈페이지 이동</button>
-            <button class="menu-modal-menu-button btn">이용약관</button>
-            <button class="menu-modal-menu-button btn">정보보호약관</button>
+          <section class="menu-modal__greeting">OOO님 안녕하세요!</section>
+          <section class="menu-modal__inner-menu">
+            <button class="menu-modal__btn btn">보낸 선물 목록</button>
+            <button class="menu-modal__btn btn">홈페이지 이동</button>
+            <button class="menu-modal__btn btn">이용약관</button>
+            <button class="menu-modal__btn btn">정보보호약관</button>
           </section>
-          <section class="menu-modal-footer">
-            <button class="menu-modal-menu-button btn">로그아웃</button>
+          <section class="menu-modal__footer">
+            <button class="menu-modal__btn btn">로그아웃</button>
           </section>
         </div>
       </div>
       <header>
-        <div class="logo" onclick="goIndex()">
+        <div class="header__logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
         </div>
-        <button class="material-icons-round menu-btn" onclick="onClickMenu()">
-          menu
-        </button>
-      </header>
-      <section class="body-container bg-present">
-        <div class="main-text-area">
-          <span class="text-1">유어위시의</span>
-          <span class="text-2">선물 서비스</span>
+        <div class="header__menu" onclick="onClickMenu()">
+          <img src="./images/menu.svg" alt="menu button" />
         </div>
-        <div class="menu-container present-menu">
-          <div class="btn-box">
-            <button class="btn btn-present menu-item first-item">
+      </header>
+      <section class="body-container body-container--theme-present">
+        <div class="body-container__text">
+          <div class="text__first">
+            <span class="text--style1">유어위시의</span>
+          </div>
+          <div class="text__second">
+            <span class="text--style2">선물 서비스</span>
+          </div>
+        </div>
+        <div class="body-container__menu menu--h298">
+          <div class="menu-container menu-container--l57">
+            <button class="menu-container__btn round-item btn first-item">
+              <img src="./images/kakao.png" alt="kakao logo" />
               단체문의
             </button>
-            <button class="btn btn-present menu-item">추석선물</button>
+            <button class="menu-container__btn round-item btn">추석선물</button>
 
-            <button class="btn btn-present menu-item" onclick="goPresent1()">
-              <span>개인맞춤</span>
-              <span>선물하기</span>
+            <button
+              class="
+                menu-container__btn
+                round-item
+                btn
+                round-item--brown round-item--h75
+                personal-present-btn
+              "
+              onclick="goPresent1()"
+            >
+              <span class="personal-present-btn__text1">개인맞춤</span>
+              <span class="personal-present-btn__text2">선물하기</span>
             </button>
           </div>
         </div>

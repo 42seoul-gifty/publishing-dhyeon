@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- JS -->
     <script defer src="./main.js"></script>
     <!-- FONT -->
@@ -24,81 +25,34 @@
   </head>
   <body>
     <div class="all-container">
-      <!-- 나중에 삭제 -->
-      <div
-        class="test_button"
-        style="
-          background-color: coral;
-          width: 100px;
-          height: 20px;
-          color: white;
-          text-align: center;
-          line-height: 1.2rem;
-          border-radius: 5px;
-          position: absolute;
-          top: 300px;
-          right: 20px;
-          z-index: 1;
-        "
-      >
-        test용버튼
-      </div>
-      <!--  -->
-      <div class="wrongnum-modal">
-        <div class="wrongnum-modal-body">
-          <span class="plane_bar"></span>
-          <section class="wrongnum-modal-body__title">
-            <span>잘못된 전화번호 입니다</span>
-          </section>
-          <section class="wrongnum-modal-body__description">
-            <span>전화번호를 확인 후 다시 입력해주세요</span>
-            <span>Ex) 010-1234-5678</span>
-          </section>
-          <button class="wrongnum-modal-body__btn btn border-btn">
-            다시 입력하기
-          </button>
-        </div>
-      </div>
       <header>
-        <div class="logo" onclick="goIndex()">
+        <div class="header__logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
         </div>
       </header>
-      <section class="body-container">
-        <div class="main-text-area present-text-area">
-          <div class="title-1">
-            <span class="text-style-1">보내시는 분</span>
-            <span class="text-style-2">의</span>
-          </div>
-          <div class="title-2">
-            <span class="text-style-2">정보를 알려주세요!</span>
-          </div>
-          <div class="content">
-            <span class="text-style-3">간편한 클릭으로 선물 정보 입력 끝!</span>
-          </div>
-        </div>
-        <div class="menu-container present-page-1">
-          <div class="menu-container__content">
-            <div class="input-box menu-item first-item">
-              <span class="input-title">이름</span>
-              <input type="text" class="present-input" placeholder="이름" />
+      <section class="body-container body-container--theme-present">
+        <div class="body-container__menu menu--h218">
+          <div class="menu-container menu-container--l57">
+            <div class="menu-container__items">
+              <span class="menu-container__title text--style5">
+                선물을 시작하세요!
+              </span>
             </div>
-            <div class="input-box menu-item">
-              <span class="input-title">연락처</span>
-              <input
-                type="text"
-                class="present-input"
-                placeholder="010-0000-0000"
-              />
+            <div class="menu-container__nav-btn">
+              <div class="nav-btn--type2">
+                <button class="nav-btn__prev btn round-item" onclick="goMain()">
+                  <img src="./images/prev_arrow.svg" alt="돌아가기" />
+                  돌아가기
+                </button>
+                <button
+                  class="nav-btn__next btn round-item round-item--brown"
+                  onclick="goPresent2()"
+                >
+                  다음단계
+                  <img src="./images/next_arrow.svg" alt="다음단계" />
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="button-container">
-            <button class="btn prev" onclick="goMain()">
-              <img src="./images/prev.svg" alt="돌아가기" />
-            </button>
-            <button class="btn next" onclick="goPresent2()">
-              <img src="./images/next.svg" alt="다음단계" />
-            </button>
           </div>
         </div>
       </section>
