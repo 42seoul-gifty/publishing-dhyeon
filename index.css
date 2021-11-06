@@ -7,13 +7,7 @@ body {
   font-size: 16px;
   color: #3e3e3e;
 }
-/* 
-@font-face {
-  font-family: "rixrak-sans";
-  src: url("./fonts/font.js") format("embedded");
-  font-weight: normal;
-  font-style: normal;
-} */
+
 @font-face {
   font-family: "notosans-regular";
   src: url("./fonts/NotoSansKR-Regular.otf") format("opentype");

@@ -32,7 +32,7 @@ const goPresent5_1 = () => {
 
 // 메뉴 모달창 예시
 const modal = document.querySelector(".menu-modal");
-const modalBody = document.querySelector(".menu-modal-body");
+const modalBody = document.querySelector(".menu-modal__body");
 
 function onClickMenu() {
   modal.classList.toggle("show");
@@ -50,8 +50,8 @@ window.addEventListener("click", (e) => {
 
 // 보내는분 연락처 정보 잘못 입력 했을때
 
-const wrongnumModal = document.querySelector(".wrongnum-modal");
-const wrongnumModalBody = document.querySelector(".wrongnum-modal-body");
+const wrongnumModal = document.querySelector(".error-modal");
+const wrongnumModalBody = document.querySelector(".error-modal__body");
 
 function onWrongnumModal() {
   wrongnumModal.classList.toggle("show");
@@ -62,7 +62,7 @@ window.addEventListener("click", (e) => {
   e.target === wrongnumModal ? onWrongnumModal() : false;
 });
 
-const wrongnumRewriteBtn = document.querySelector(".wrongnum-modal-body__btn");
+const wrongnumRewriteBtn = document.querySelector(".error-modal__btn");
 
 wrongnumRewriteBtn.addEventListener("click", () => {
   onWrongnumModal();

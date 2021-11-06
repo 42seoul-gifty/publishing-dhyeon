@@ -19,56 +19,70 @@
     <!-- FONT -->
     <script defer src="./fonts/font.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>yourwish</title>
   </head>
   <body>
     <div class="all-container">
       <div class="menu-modal">
-        <div class="menu-modal-body">
-          <section class="menu-modal-exit">
-            <button class="material-icons-round" onclick="onExitMenu()">
-              close
-            </button>
+        <div class="menu-modal__body">
+          <section class="menu-modal__exit-btn">
+            <img
+              src="./images/close.svg"
+              alt="close button"
+              onclick="onExitMenu()"
+            />
           </section>
-          <section class="menu-modal-greeting">OOO님 안녕하세요!</section>
-          <section class="menu-modal-menu">
-            <button class="menu-modal-menu-button btn">보낸 선물 목록</button>
-            <button class="menu-modal-menu-button btn">홈페이지 이동</button>
-            <button class="menu-modal-menu-button btn">이용약관</button>
-            <button class="menu-modal-menu-button btn">정보보호약관</button>
+          <section class="menu-modal__greeting">OOO님 안녕하세요!</section>
+          <section class="menu-modal__inner-menu">
+            <button class="menu-modal__btn btn">보낸 선물 목록</button>
+            <button class="menu-modal__btn btn">홈페이지 이동</button>
+            <button class="menu-modal__btn btn">이용약관</button>
+            <button class="menu-modal__btn btn">정보보호약관</button>
           </section>
-          <section class="menu-modal-footer">
-            <button class="menu-modal-menu-button btn">로그아웃</button>
+          <section class="menu-modal__footer">
+            <button class="menu-modal__btn btn">로그아웃</button>
           </section>
         </div>
       </div>
       <header>
-        <div class="logo" onclick="goIndex()">
+        <div class="header__logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
         </div>
-        <button class="material-icons-round" onclick="onClickMenu()">
-          menu
-        </button>
-      </header>
-      <section class="body-container bg-present">
-        <div class="main-text-area">
-          <span class="text-1">유어위시의</span>
-          <span class="text-2">선물 서비스</span>
+        <div class="header__menu" onclick="onClickMenu()">
+          <img src="./images/menu.svg" alt="menu button" />
         </div>
-        <div class="menu-container login-menu">
-          <div class="btn-box">
+      </header>
+      <section class="body-container body-container--theme-present">
+        <div class="body-container__text">
+          <div class="text__first">
+            <span class="text--style1">유어위시의</span>
+          </div>
+          <div class="text__second">
+            <span class="text--style2">선물 서비스</span>
+          </div>
+        </div>
+        <div class="body-container__menu menu--h209">
+          <div class="menu-container menu-container--l57">
             <button
-              class="btn btn-login btn-login-naver border-btn first-item"
+              class="
+                menu-container__btn
+                round-item
+                first-item
+                naver-login-btn
+                btn
+              "
               onclick="goMain()"
             >
-              <img src="./images/naver_login_text.svg" alt="네이버로 로그인" />
+              <img src="./images/naver.svg" alt="naver logo" />
+              <span>네이버 로그인</span>
             </button>
             <button
-              class="btn btn-login btn-login-kakao border-btn"
+              class="menu-container__btn round-item kakao-login-btn btn"
               onclick="goMain()"
             >
-              <img src="./images/kakao_login_text.svg" alt="카카오톡 로그인" />
+              <img src="./images/kakao.png" alt="kakao logo" />
+              <span>카카오톡 로그인</span>
             </button>
           </div>
         </div>
