@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- JS -->
     <script defer src="./main.js"></script>
     <!-- FONT -->
@@ -25,42 +26,55 @@
   <body>
     <div class="all-container">
       <header>
-        <div class="logo" onclick="goIndex()">
+        <div class="header__logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
         </div>
       </header>
       <section class="body-container">
-        <div class="main-text-area">
-          <div class="description">
-            <span class="text-style-5">발송될 선물 후보를</span>
-            <span class="text-style-5">확인하세요</span>
+        <div class="body-container__text">
+          <div class="text__first">
+            <span class="text--s15 text--bold text--l22"
+              >발송될 선물 후보를</span
+            >
+          </div>
+          <div class="text__second">
+            <span class="text--s15 text--bold text--l22">확인하세요</span>
           </div>
         </div>
-        <section class="lists-container">
-          <ul class="present-lists">
-            <li class="present-lists__item">
-              <img src="./images/tumbler.jpeg" alt="present_sample" />
+        <div class="body-container__images">
+          <ul class="image-list">
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
             </li>
-            <li class="present-lists__item">
-              <img src="./images/tumbler.jpeg" alt="present_sample" />
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
             </li>
-            <li class="present-lists__item">
-              <img src="./images/tumbler.jpeg" alt="present_sample" />
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
             </li>
-            <li class="present-lists__item">
-              <img src="./images/tumbler.jpeg" alt="present_sample" />
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
             </li>
-            <li class="present-lists__item">
-              <img src="./images/tumbler.jpeg" alt="present_sample" />
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
             </li>
-            <li class="present-lists__item">
-              <img src="./images/tumbler.jpeg" alt="present_sample" />
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
             </li>
-            <li class="present-lists__item">
-              <img src="./images/tumbler.jpeg" alt="present_sample" />
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
+            </li>
+            <li class="image-list__item">
+              <img src="./images/tumbler.jpeg" alt="tumbler" />
             </li>
           </ul>
-        </section>
+        </div>
+        <div class="body-container__btn">
+          <button class="btn__check round-item btn" onclick="goPresent5()">
+            확인하기
+          </button>
+          <button class="btn__present round-item btn">선물하기</button>
+        </div>
       </section>
     </div>
   </body>
