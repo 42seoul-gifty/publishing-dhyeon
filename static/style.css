@@ -590,7 +590,7 @@ header {
 }
 
 .menu-container__nav-btn {
-  position: absolute;
+  position: fixed;
   bottom: 60px;
   width: calc(100% - 46px);
 }

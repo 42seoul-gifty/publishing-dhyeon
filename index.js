@@ -8,6 +8,9 @@ app
   .get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
   })
+  .get("/index.html", function (req, res) {
+    res.sendFile(__dirname + "/index.html");
+  })
   .get("/main.html", function (req, res) {
     res.sendFile(__dirname + "/main.html");
   })
