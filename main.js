@@ -29,6 +29,9 @@ const goPresent5 = () => {
 const goPresent5_1 = () => {
   window.location.href = "/present-5-1.html";
 };
+const goPresent6 = () => {
+  window.location.href = "/present-6.html";
+};
 
 // 메뉴 모달창 예시
 const modal = document.querySelector(".menu-modal");
