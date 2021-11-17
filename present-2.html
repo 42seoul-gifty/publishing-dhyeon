@@ -49,7 +49,7 @@
         <div class="error-modal__body">
           <span class="plane-bar"></span>
           <section class="error-modal__title">
-            <span>잘못된 연락처 입니다</span>
+            <span class="text--bold">잘못된 연락처 입니다</span>
           </section>
           <section class="error-modal__description">
             <span>전화번호를 확인 후 다시 입력해주세요</span>
@@ -58,6 +58,7 @@
           <button class="error-modal__btn btn round-item">다시 입력하기</button>
         </div>
       </div>
+      <!--  -->
       <header>
         <div class="header__logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
@@ -66,40 +67,44 @@
       <section class="body-container">
         <div class="body-container__text body-container__text--top77">
           <div class="text__first">
-            <span class="text--style1 text--color-817C5C text--bold"
+            <span class="text--s20 text--color-817C5C text--bold"
               >보내시는 분</span
             >
-            <span class="text--style3">의</span>
+            <span class="text--s13 text--color-838383">의</span>
           </div>
-          <div class="text__second">
-            <span class="text--style3">정보를 알려주세요!</span>
+          <div class="text__second text--s13 text--m08">
+            <span class="text--color-838383">정보를 알려주세요!</span>
           </div>
-          <div class="text__third">
-            <span class="text--style6">간편한 클릭으로 선물 정보 입력 끝!</span>
+          <div class="text__third text--m10 text--thin">
+            <span class="text--color-838383"
+              >간편한 클릭으로 선물 정보 입력 끝!</span
+            >
           </div>
         </div>
 
         <div class="body-container__menu menu--h436">
-          <div class="menu-container menu-container--l57">
-            <div
-              class="
-                menu-container__input-wrap
-                round-item round-item--border
-                first-item
-              "
-            >
-              <span class="input__title">이름</span>
-              <input type="text" class="input__content" placeholder="이름" />
-            </div>
-            <div
-              class="menu-container__input-wrap round-item round-item--border"
-            >
-              <span class="input__title">연락처</span>
-              <input
-                type="text"
-                class="input__content"
-                placeholder="010-0000-0000"
-              />
+          <div class="menu-container">
+            <div class="menu-container__items">
+              <div
+                class="
+                  menu-container__input-wrap
+                  round-item round-item--border
+                  first-item
+                "
+              >
+                <span class="input__title text--thin">이름</span>
+                <input type="text" class="input__content" placeholder="이름" />
+              </div>
+              <div
+                class="menu-container__input-wrap round-item round-item--border"
+              >
+                <span class="input__title text--thin">연락처</span>
+                <input
+                  type="text"
+                  class="input__content"
+                  placeholder="010-0000-0000"
+                />
+              </div>
             </div>
             <div class="menu-container__nav-btn">
               <div class="nav-btn--type2">

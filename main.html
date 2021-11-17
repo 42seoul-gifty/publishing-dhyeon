@@ -25,6 +25,7 @@
   </head>
   <body>
     <div class="all-container">
+      <!-- menu modal -->
       <div class="menu-modal">
         <div class="menu-modal__body">
           <section class="menu-modal__exit-btn">
@@ -42,10 +43,11 @@
             <button class="menu-modal__btn btn">정보보호약관</button>
           </section>
           <section class="menu-modal__footer">
-            <button class="menu-modal__btn btn">로그아웃</button>
+            <button class="menu-modal__btn--bold btn">로그아웃</button>
           </section>
         </div>
       </div>
+      <!--  -->
       <header>
         <div class="header__logo" onclick="goIndex()">
           <img src="./images/logo.svg" alt="yourwish" />
@@ -64,26 +66,32 @@
           </div>
         </div>
         <div class="body-container__menu menu--h298">
-          <div class="menu-container menu-container--l57">
-            <button class="menu-container__btn round-item btn first-item">
-              <img src="./images/kakao.png" alt="kakao logo" />
-              단체문의
-            </button>
-            <button class="menu-container__btn round-item btn">추석선물</button>
+          <div class="menu-container">
+            <div class="menu-container__items--80">
+              <button
+                class="menu-container__btn round-item btn first-item text--thin"
+              >
+                <img src="./images/kakao.png" alt="kakao logo" />
+                단체문의
+              </button>
+              <button class="menu-container__btn round-item btn text--thin">
+                시즌선물
+              </button>
 
-            <button
-              class="
-                menu-container__btn
-                round-item
-                btn
-                round-item--brown round-item--h75
-                personal-present-btn
-              "
-              onclick="goPresent1()"
-            >
-              <span class="personal-present-btn__text1">개인맞춤</span>
-              <span class="personal-present-btn__text2">선물하기</span>
-            </button>
+              <button
+                class="
+                  menu-container__btn
+                  round-item
+                  btn
+                  round-item--brown round-item--h75
+                  personal-present-btn
+                "
+                onclick="goPresent1()"
+              >
+                <span class="personal-present-btn__text1">개인맞춤</span>
+                <span class="personal-present-btn__text2">선물하기</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
