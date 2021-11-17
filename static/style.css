@@ -8,6 +8,14 @@ body {
   color: #3e3e3e;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 @font-face {
   font-family: "notosans-regular";
   src: url("./fonts/NotoSansKR-Regular.otf") format("opentype");
