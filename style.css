@@ -69,11 +69,33 @@ input {
   background-color: #fffbf7;
 }
 .round-item--border {
+  display: block;
+  width: 100%;
+  height: 48px;
+  font-size: 1rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  margin-bottom: 12px;
   background-color: white;
   border: 1px solid #eae8d8;
 }
 .round-item--brown {
+  display: block;
+  width: 100%;
+  height: 48px;
+  font-size: 1.3rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  margin-bottom: 12px;
   background-color: #ebe8d6;
+  border: none;
+}
+.round-item--half {
+  width: 50%;
+  padding-top: 0.85rem;
+  padding-right: 22px;
+  text-align: right;
+  float: right;
 }
 .round-item--circle {
 }
@@ -167,6 +189,16 @@ input {
 .text--s11 {
   font-size: 1.1rem;
 }
+.text--l08 {
+  line-height: 0.8rem;
+}
+.text--l22 {
+  line-height: 2.2rem;
+}
+.text--m08 {
+  margin: 0.8rem 0;
+}
+
 /*
 ** all-container
 */
@@ -390,12 +422,6 @@ header {
 .text__third {
   line-height: 1rem;
 }
-.text--l08 {
-  line-height: 0.8rem;
-}
-.text--l22 {
-  line-height: 2.2rem;
-}
 
 .body-container__images {
 }
@@ -419,6 +445,9 @@ header {
 }
 .menu--h436 {
   height: 436px;
+}
+.menu--h487 {
+  height: 487px;
 }
 
 .menu-container {
@@ -473,7 +502,7 @@ header {
   /* margin: 0 auto; */
 }
 .menu-container__nav-btn img {
-  width: 20px;
+  width: 0.8rem;
 }
 .nav-btn--type2 {
   display: flex;
@@ -510,6 +539,7 @@ header {
 .check-box input:checked + label {
   background-color: #fffbf7;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: "notosans-bold";
 }
 
 .check-box__label {
